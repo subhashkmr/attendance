@@ -1,0 +1,297 @@
+body{
+	
+}
+i:active{
+	color: rgba(0,0,0,.5);
+}
+
+img{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 150%;
+     z-index: -1;
+	
+}
+.nav-item:active{
+	    font-size: 1.025rem;
+}
+.nav-item:hover{
+	color:rgb(20,0,20);
+}
+.fa-facebook-f{
+	color: #3b5998;
+}
+.fa-whatsapp{
+	color: rgb(37, 240, 102);
+}
+.fa-github{
+	color: black;
+}
+.text-muted{
+	color: #c6c9cc !important;
+}
+.nav-item{
+	margin-right: 30px;
+}
+.contain{
+	width: 50%;
+	margin-left: 25%;
+	padding: 10px;
+	background-color: #e9ecef;
+	height: 430px;
+	text-transform: uppercase;
+	z-index: -1;
+	font-weight: 500;
+	font-family: Montserrat;
+	border-radius: 10px;
+	box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.5);
+	  font-weight: bold;
+}
+.q{
+	position: relative;
+	list-style: none;
+	margin: 50px 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.q:before{
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 100%;
+	height: 15px;
+	background-color: rgba(54,126,223,.5);
+	border-radius: 1000px;
+}
+.q:after{
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 0;
+	height: 15px;
+	background-color: rgba(54,126,223,1);
+	border-radius: 1000px;
+	animation-duration: .7s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+.q.html:after{
+	animation-name: html;
+}
+@keyframes html{
+	to{
+		width: 90%;
+	}
+}
+.q.js:after{
+	animation-name: js;
+}
+@keyframes js{
+	to{
+		width: 50%;
+	}
+}
+.q.css:after{
+	animation-name: css;
+}
+@keyframes css{
+	to{
+		width: 40%;
+	}
+}
+.q.node:after{
+	animation-name: node;
+}
+@keyframes node{
+	to{
+		width: 60%;
+	}
+}
+.hat{
+	position:relative;
+	width: 100%;
+	margin-bottom: 50px;
+	margin-left: 5%;
+	margin-top: 150px;
+	margin-right: 5%;
+	font-family: montserrat;
+	text-transform: uppercase;
+	color: white;
+	transform: translate(0,-50%);
+	    max-width: 100%;
+	    font-size: 30px;
+}
+.hat h1{
+	margin: 0;
+	white-space: nowrap; 
+	overflow-x: hidden;
+  animation: type 4s steps(500, end);
+}
+@keyframes type{
+	0%{
+		width: 0;
+	}
+	100%{
+		width:100%;
+	}
+}
+@keyframes caret-blink{
+	0%{
+		border-color: transparent;
+	}
+	50%{
+		border-color: white;
+	}
+	100%{
+		border-color: transparent;
+	}
+}
+h1{
+	font-size: 60px;
+}
+footer{
+	margin-top: 100px;
+}
+body{
+	background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: .5px solid transparent;
+  border-radius: 3rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+.container.hub{
+	margin-top: 100px;
+}
